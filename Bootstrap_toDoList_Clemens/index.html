@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="Scripts/controller.js"></script>
+    <script src="Scripts/logic.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+            <h1>Things to do?</h1>
+
+        <h3>Keep track of them here.</h3>
+        <table class="table" id="todoListTable">
+            <thead class="thead-dark" id="todoListHeaderRow">
+            <th scope="col" width=20%>Title</th>
+            <th scope="col" width=45%>Content</th>
+            <th scope="col" width=15%>Done</th>
+            <th scope="col" width=10%></th>
+            </thead>
+            <tr class="addItemRow">
+                <td><input type="text" style= "width:100%" id="addItemRowTitle"></td>
+                <td><input type="text" style= "width:100%" id="addItemRowContent"></td>
+                <td><input type="checkbox" class="align-middle" style="margin-left: 15px" aria-label="Checkbox for following text input"></td>
+                <td><button type="button" class="btn btn-secondary btn-outline-primary" id="addItemRow">Add</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
